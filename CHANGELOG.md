@@ -2,6 +2,72 @@
 
 All notable changes to the DevMesh extension are documented in this file.
 
+## [0.1.16] - 2026-08-18
+
+### Added
+
+- Multi-day assessments. Long-running work now shows the time left in hours and days rather than a session timer, and the deadline shown is always the one the assessment actually runs on.
+- Pick up where you left off. Closing VS Code, restarting it, or losing your connection no longer costs you your session: reopening restores the workspace and the work you had done.
+- A link straight back to the DevMesh site after you submit, so finishing in the editor lands you where the next step happens.
+- A confirmation before submitting when part of your work could not be captured, so nothing is sent silently incomplete.
+
+### Changed
+
+- The screen you see after submitting now tells you exactly what happens next, and only promises a report when one is actually coming.
+- If your assessment ends while you are still working, the editor now says so instead of leaving you typing into a finished session.
+- Pausing has been removed. Assessment time runs continuously, which is what the timer and the deadline always reflected.
+
+### Fixed
+
+- AI file edits that get cut off part-way are now refused and rolled back instead of being written to disk. Previously a truncated edit could be saved and reported as successful, which meant later edits built on a damaged file.
+- A dropped connection mid-assessment no longer signs you out; your session is preserved and reconnects on its own.
+
+## [0.1.15] - 2026-07-14
+
+Release packaging fix. No user-facing changes.
+
+## [0.1.14] - 2026-07-14
+
+### Added
+
+- A complete DevMesh look and feel. The panel now has its own dark identity, brand typography, and a responsive AI orb at its centre, instead of inheriting whatever theme the editor happened to be using.
+- Clear notice when DevMesh is undergoing maintenance, so it is obvious the platform is unavailable rather than the extension being broken.
+
+### Changed
+
+- DevMesh branding throughout, replacing the last of the upstream artwork.
+- Onboarding, submission and scoring screens are centred and width-constrained so they read comfortably at any panel width.
+
+### Fixed
+
+- The extension now tells you when your version is too old to continue and walks you through updating, instead of failing partway through an assessment.
+
+## [0.1.13] - 2026-05-28
+
+Release and packaging maintenance. No user-facing changes.
+
+## [0.1.12] - 2026-05-28
+
+Release and packaging maintenance. No user-facing changes.
+
+## [0.1.11] - 2026-05-28
+
+Release and packaging maintenance. No user-facing changes.
+
+## [0.1.10] - 2026-05-28
+
+Release and packaging maintenance. No user-facing changes.
+
+## [0.1.9] - 2026-05-28
+
+### Added
+
+- Published to the Visual Studio Marketplace, so DevMesh can be installed and updated the usual way.
+
+## [0.1.8] - 2026-05-22
+
+Release packaging. No user-facing changes.
+
 ## [0.1.7] - 2026-05-22
 
 ### Changed
