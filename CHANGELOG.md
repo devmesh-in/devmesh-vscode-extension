@@ -2,6 +2,20 @@
 
 All notable changes to the DevMesh extension are documented in this file.
 
+## [0.2.0] - Unreleased
+
+### Changed
+
+- Your session now checks in with DevMesh instead of trusting a saved sign-in. On every reopen the editor asks whether your assessment is still running and gets a straight answer, so what you see always matches what DevMesh actually knows.
+- Your saved sign-in is kept in the operating system's credential store rather than in a file inside the project folder.
+- A deadline your organization extends after you started now applies immediately. There is nothing to re-enter and nothing to reopen.
+
+### Fixed
+
+- A saved session can no longer expire out from under you. Leaving an assessment open overnight, sleeping the laptop, or coming back the next morning keeps working without a new invite link.
+- If you were locked out by an older version of the extension, updating unlocks you by itself. Opening your assessment folder once is enough, and if the assessment really did end you get told that instead of a screen with no way out.
+- The editor no longer clears a saved session over a question it could not get answered. A dropped connection, a VPN drop, or a DevMesh outage keeps your work, your activity log, and your session exactly where they were.
+
 ## [0.1.16] - 2026-08-18
 
 ### Added
